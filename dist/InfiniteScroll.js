@@ -171,6 +171,7 @@ var InfiniteScroll = function (_Component) {
 InfiniteScroll.propTypes = {
   children: _propTypes2.default.oneOfType([_propTypes2.default.object, _propTypes2.default.array]).isRequired,
   element: _propTypes2.default.string,
+  className: _propTypes2.default.string,
   hasMore: _propTypes2.default.bool,
   initialLoad: _propTypes2.default.bool,
   isReverse: _propTypes2.default.bool,
@@ -184,6 +185,7 @@ InfiniteScroll.propTypes = {
 };
 InfiniteScroll.defaultProps = {
   element: 'div',
+  className: 'InfiniteScroll',
   hasMore: false,
   initialLoad: true,
   pageStart: 0,
